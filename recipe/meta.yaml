@@ -1,5 +1,5 @@
 {% set name = "clapper" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/clapper-{{ version }}.tar.gz
-  sha256: 31494e3cd7c2ccf1b5884e382d75429e24da2aee1e19f07b0508c95a7ab772eb
+  sha256: f9ba0af80bf4ab102d78189ce013e3ba9ee6f666aa6b7f807dcf7f52c9780496
 
 build:
   noarch: python
