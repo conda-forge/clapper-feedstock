@@ -1,5 +1,5 @@
 {% set name = "clapper" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/clapper-{{ version }}.tar.gz
-  sha256: f9ba0af80bf4ab102d78189ce013e3ba9ee6f666aa6b7f807dcf7f52c9780496
+  sha256: da37f5563acc0621eac524ee9ac40e9640f9274d7db2173e155e799e6bba3438
 
 build:
   noarch: python
@@ -41,9 +41,9 @@ test:
     - pytest
 
 about:
-  home: https://gitlab.idiap.ch/software/clapper
+  home: https://github.com/idiap/clapper
   doc_url: https://clapper.readthedocs.io
-  dev_url: https://gitlab.idiap.ch/software/clapper
+  dev_url: https://github.com/idiap/clapper
   summary: Configuration Support for Python Packages and CLIs
   license: BSD-3-Clause
   license_file: LICENSES/BSD-3-Clause.txt
