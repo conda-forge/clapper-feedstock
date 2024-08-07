@@ -41,9 +41,9 @@ test:
     - pytest
 
 about:
-  home: https://gitlab.idiap.ch/software/clapper
+  home: https://github.com/idiap/clapper
   doc_url: https://clapper.readthedocs.io
-  dev_url: https://gitlab.idiap.ch/software/clapper
+  dev_url: https://github.com/idiap/clapper
   summary: Configuration Support for Python Packages and CLIs
   license: BSD-3-Clause
   license_file: LICENSES/BSD-3-Clause.txt
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - anjos
+
