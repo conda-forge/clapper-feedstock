@@ -3,13 +3,13 @@ About clapper-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/clapper-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gitlab.idiap.ch/software/clapper
+Home: https://github.com/idiap/clapper
 
 Package license: BSD-3-Clause
 
 Summary: Configuration Support for Python Packages and CLIs
 
-Development: https://gitlab.idiap.ch/software/clapper
+Development: https://github.com/idiap/clapper
 
 Documentation: https://clapper.readthedocs.io
 
@@ -147,5 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Yannick-Dayer](https://github.com/Yannick-Dayer/)
 * [@anjos](https://github.com/anjos/)
 
