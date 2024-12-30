@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "clapper" %}
 {% set version = "1.3.1" %}
 
@@ -6,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/clapper-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/clapper-{{ version }}.tar.gz
   sha256: 88296ddf970ea70a579aac31739527e62c9806e150aaa8dc1ab14f02553fc9c1
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - versioningit
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - click >=8
     - tomli
     - tomli-w
@@ -39,6 +40,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/idiap/clapper
